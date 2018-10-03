@@ -1,0 +1,164 @@
+
+.main {
+  max-width: 772px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  padding: 0 1em;
+  position: relative;
+}
+*, .serif {
+  font-family: 'Rasa', serif;
+}
+h1, h2, h3, h4, h5, .sans {
+  font-family: 'Work Sans', sans-serif;
+  color: #3a3a3a;
+}
+p {
+  font-size: 19px;
+  line-height: 21px;
+}
+a {
+  color: #990003;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding-left: .25em;
+}
+li:nth-child(even), tr:nth-child(even) {
+  background-color: rgba(233, 233, 242, 0.73);
+}
+td {
+  vertical-align: top;
+  min-width: 140px;
+}
+.grey-bg {
+  background: rgba(233, 233, 242, 0.73);
+}
+.section {
+  border-bottom: 1px solid lightgray;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  padding: .6em .2em;
+}
+.two-col-container, .three-col-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  flex-grow: 1;
+}
+
+/* .about {
+  position: relative;
+} */
+.heading-container {
+  width: calc(100% + 1em);
+  margin-left: -1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+.page-heading h1 {
+  margin-bottom: 0;
+}
+.page-heading h2 {
+  margin: 0;
+}
+.contact {
+  margin-top: 21px;
+  flex-basis: 0;
+}
+.hide {
+  display: none;
+}
+.tools ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+.job {
+  margin-bottom: 2em;
+}
+.job .role {
+  font-size: 1.3em;
+}
+.more-link {
+  color: #990003;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: .6em;
+}
+.project {
+  padding: 1em 0;
+  position: relative;
+}
+.project:not(:first-of-type):before {
+  content: '';
+  position: absolute;
+  left: 8%;
+  top: 0;
+  width: 84%;
+  border-bottom: 1px solid lightgrey;
+}
+/*
+ *
+  Dark Mode
+ *
+*/
+.dark {
+  transition: all 2s ease;
+}
+.dark-toggle {
+  position: absolute;
+  right: 0;
+  font-size: .95em;
+  line-height: 1em;
+  padding: .1em .6em;
+  cursor: pointer;
+  background-color: #141414;
+  color: #e2e2e2;
+  border-bottom-left-radius: 5px;
+}
+.dark .dark-toggle {
+  background-color: #e2e2e2;
+}
+.dark .dark-toggle:hover span {
+  color: #990003;
+}
+.dark-toggle:hover {
+  color: #10d1d1;
+}
+.dark-toggle .light {
+  display: none;
+}
+.dark .dark-toggle .dark {
+  display: none;
+}
+.dark .dark-toggle .light {
+  display: inline-block;
+  color: #3a3a3a;
+}
+body.dark {
+  background-color: #141414;
+}
+.dark .main {
+  border-color: #c5c5c5;
+}
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark .sans {
+  color: #c5c5c5;
+}
+.dark a, .dark .more-link {
+  color: #10d1d1;
+}
+.dark * {
+  color: #c5c5c5;
+}
+.dark .grey-bg {
+  background-color: #3a3a3a;
+}
+.dark li:nth-child(even), .dark tr:nth-child(even) {
+  background-color: #3a3a3a;
+}
