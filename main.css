@@ -162,3 +162,15 @@ body.dark {
 .dark li:nth-child(even), .dark tr:nth-child(even) {
   background-color: #3a3a3a;
 }
+
+@media print {
+
+  .dark-toggle { display: none !important; }
+
+  .main { border: none; }
+
+  .more-link { display: none; }
+
+  /* .more.hide { display: inline-block; } */
+
+}
